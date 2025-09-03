@@ -1,6 +1,6 @@
 ﻿//main.cpp
 
-#include "prime.hpp"​
+#include "prime.hpp"
 #include "iostream"
 
 int main() {
