@@ -18,7 +18,7 @@ bool isPrimeHalf(int n, long long* modOps) {
     }
     else if (n <= 2) {
         return true;
-    }                        // quick check since all integers below 1 will not be prime and integers 2 and 3 are bothe prime.
+    }                        // quick check since all integers below 1 will not be prime and integers 2 is prime.
     incrementModOps(modOps);
     if (n % 2 == 0) {  // Eliminates the need to check for all other modulus operation on n by an even number.
         return false;

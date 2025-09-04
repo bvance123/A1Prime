@@ -1,3 +1,4 @@
 C:/DataStructures/A1Prime/A1Prime/out/build/x64-debug/CMakeFiles/A1Prime.dir
+C:/DataStructures/A1Prime/A1Prime/out/build/x64-debug/CMakeFiles/A1Prime_test.dir
 C:/DataStructures/A1Prime/A1Prime/out/build/x64-debug/CMakeFiles/edit_cache.dir
 C:/DataStructures/A1Prime/A1Prime/out/build/x64-debug/CMakeFiles/rebuild_cache.dir

@@ -12,7 +12,8 @@ endif()
 project ("A1Prime")
 
 # Add source to this project's executable.
-add_executable (A1Prime "prime.cpp" "prime.hpp" "main.cpp" "test.cpp")
+add_executable(A1Prime main.cpp prime.cpp)
+add_executable(A1Prime_test test.cpp prime.cpp)
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
   set_property(TARGET A1Prime PROPERTY CXX_STANDARD 20)

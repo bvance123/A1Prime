@@ -49,13 +49,6 @@ cmake_ninja_workdir = C$:\DataStructures\A1Prime\A1Prime\out\build\x64-debug\
 
 build cmake_object_order_depends_target_A1Prime: phony || .
 
-build CMakeFiles\A1Prime.dir\prime.cpp.obj: CXX_COMPILER__A1Prime_unscanned_Debug C$:\DataStructures\A1Prime\A1Prime\prime.cpp || cmake_object_order_depends_target_A1Prime
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20 -ZI
-  OBJECT_DIR = CMakeFiles\A1Prime.dir
-  OBJECT_FILE_DIR = CMakeFiles\A1Prime.dir
-  TARGET_COMPILE_PDB = CMakeFiles\A1Prime.dir\
-  TARGET_PDB = A1Prime.pdb
-
 build CMakeFiles\A1Prime.dir\main.cpp.obj: CXX_COMPILER__A1Prime_unscanned_Debug C$:\DataStructures\A1Prime\A1Prime\main.cpp || cmake_object_order_depends_target_A1Prime
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20 -ZI
   OBJECT_DIR = CMakeFiles\A1Prime.dir
@@ -63,7 +56,7 @@ build CMakeFiles\A1Prime.dir\main.cpp.obj: CXX_COMPILER__A1Prime_unscanned_Debug
   TARGET_COMPILE_PDB = CMakeFiles\A1Prime.dir\
   TARGET_PDB = A1Prime.pdb
 
-build CMakeFiles\A1Prime.dir\test.cpp.obj: CXX_COMPILER__A1Prime_unscanned_Debug C$:\DataStructures\A1Prime\A1Prime\test.cpp || cmake_object_order_depends_target_A1Prime
+build CMakeFiles\A1Prime.dir\prime.cpp.obj: CXX_COMPILER__A1Prime_unscanned_Debug C$:\DataStructures\A1Prime\A1Prime\prime.cpp || cmake_object_order_depends_target_A1Prime
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20 -ZI
   OBJECT_DIR = CMakeFiles\A1Prime.dir
   OBJECT_FILE_DIR = CMakeFiles\A1Prime.dir
@@ -78,7 +71,7 @@ build CMakeFiles\A1Prime.dir\test.cpp.obj: CXX_COMPILER__A1Prime_unscanned_Debug
 #############################################
 # Link the executable A1Prime.exe
 
-build A1Prime.exe: CXX_EXECUTABLE_LINKER__A1Prime_Debug CMakeFiles\A1Prime.dir\prime.cpp.obj CMakeFiles\A1Prime.dir\main.cpp.obj CMakeFiles\A1Prime.dir\test.cpp.obj
+build A1Prime.exe: CXX_EXECUTABLE_LINKER__A1Prime_Debug CMakeFiles\A1Prime.dir\main.cpp.obj CMakeFiles\A1Prime.dir\prime.cpp.obj
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -ZI
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
   LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
@@ -89,6 +82,49 @@ build A1Prime.exe: CXX_EXECUTABLE_LINKER__A1Prime_Debug CMakeFiles\A1Prime.dir\p
   TARGET_FILE = A1Prime.exe
   TARGET_IMPLIB = A1Prime.lib
   TARGET_PDB = A1Prime.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target A1Prime_test
+
+
+#############################################
+# Order-only phony target for A1Prime_test
+
+build cmake_object_order_depends_target_A1Prime_test: phony || .
+
+build CMakeFiles\A1Prime_test.dir\test.cpp.obj: CXX_COMPILER__A1Prime_test_unscanned_Debug C$:\DataStructures\A1Prime\A1Prime\test.cpp || cmake_object_order_depends_target_A1Prime_test
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -ZI
+  OBJECT_DIR = CMakeFiles\A1Prime_test.dir
+  OBJECT_FILE_DIR = CMakeFiles\A1Prime_test.dir
+  TARGET_COMPILE_PDB = CMakeFiles\A1Prime_test.dir\
+  TARGET_PDB = A1Prime_test.pdb
+
+build CMakeFiles\A1Prime_test.dir\prime.cpp.obj: CXX_COMPILER__A1Prime_test_unscanned_Debug C$:\DataStructures\A1Prime\A1Prime\prime.cpp || cmake_object_order_depends_target_A1Prime_test
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -ZI
+  OBJECT_DIR = CMakeFiles\A1Prime_test.dir
+  OBJECT_FILE_DIR = CMakeFiles\A1Prime_test.dir
+  TARGET_COMPILE_PDB = CMakeFiles\A1Prime_test.dir\
+  TARGET_PDB = A1Prime_test.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target A1Prime_test
+
+
+#############################################
+# Link the executable A1Prime_test.exe
+
+build A1Prime_test.exe: CXX_EXECUTABLE_LINKER__A1Prime_test_Debug CMakeFiles\A1Prime_test.dir\test.cpp.obj CMakeFiles\A1Prime_test.dir\prime.cpp.obj
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -ZI
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = CMakeFiles\A1Prime_test.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\A1Prime_test.dir\
+  TARGET_FILE = A1Prime_test.exe
+  TARGET_IMPLIB = A1Prime_test.lib
+  TARGET_PDB = A1Prime_test.pdb
 
 
 #############################################
@@ -118,6 +154,8 @@ build rebuild_cache: phony CMakeFiles\rebuild_cache.util
 
 build A1Prime: phony A1Prime.exe
 
+build A1Prime_test: phony A1Prime_test.exe
+
 # =============================================================================
 # Folder targets.
 
@@ -126,7 +164,7 @@ build A1Prime: phony A1Prime.exe
 #############################################
 # Folder: C:/DataStructures/A1Prime/A1Prime/out/build/x64-debug
 
-build all: phony A1Prime.exe
+build all: phony A1Prime.exe A1Prime_test.exe
 
 # =============================================================================
 # Built-in targets
